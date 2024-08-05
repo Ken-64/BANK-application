@@ -14,20 +14,20 @@ export const UserDummy = [
 export const ListDummy = [
   {
     User: {
-      name: "Aさん",
+      name: "aaaaaaaa",
       icon: "human2.png",
     },
   },
   {
     User: {
-      name: "Bさん",
-      icon: "human3.png",
+      name: "iiiiiiii",
+      icon: "./human3.png",
     },
   },
   {
     User: {
-      name: "Cさん",
-      icon: "human4.png",
+      name: "uuuuuuuu",
+      icon: "./human4.png",
     },
   },
 ];
