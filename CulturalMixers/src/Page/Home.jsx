@@ -25,7 +25,7 @@ export const Home = () => {
               <div className='Balance'>
               <Userbanlance/>
 
-              <div className='SendMoneyButton'>
+              <div>
               <SendMoneyButton />
               </div>
               
