@@ -1,37 +1,42 @@
-import {Username} from '../Components/Username.js';
-import {Useraccount} from '../Components/Useraccount.js';
-import {Userbanlance} from '../Components/Userbalance.js';
-import {Userimage} from '../Components/Userimage.js';
-import {SendMoneyButton} from '../Components/SendMoneyButton.js';
-import { useNavigate } from "react-router-dom"
+import { Username } from "../Components/Username.js";
+import { Useraccount } from "../Components/Useraccount.js";
+import { Userbanlance } from "../Components/Userbalance.js";
+import { Userimage } from "../Components/Userimage.js";
+import { SendMoneyButton } from "../Components/SendMoneyButton.js";
+import { UserDummy } from "../Utils/dummyData.js";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
-  const navigate = useNavigate()
-    return (
-        <div className="App">
-        <div className="smartphone">
-          <div className="content">
-              </div>
-            </div>
-            <div className="profile">
-              <div className='ImageName'>
-              <Userimage />
-              <Username/>
-              </div>
-              <div className='Account'>
-              < Useraccount/>
-              </div>
-  
-              <div className='Balance'>
-              <Userbanlance/>
+  const [userDummy, setUserDummy] = useState([]);
 
-              <div>
-              <SendMoneyButton />
-              </div>
-              
-             <div/>
-           </div>
-         </div>
+  useEffect(() => {
+    setUserDummy(UserDummy);
+  }, []);
+
+  return (
+    <div className="App">
+      <div className="smartphone">
+        <div className="content"></div>
       </div>
-    )
-}
+      {userDummy.map((user) => (
+        <div className="profile" key={user.User.account_number}>
+          <div className="ImageName">
+            <Userimage user={user} />
+            <Username user={user} />
+          </div>
+          <div className="Account">
+            <Useraccount user={user} />
+          </div>
+
+          <div className="Balance">
+            <Userbanlance user={user} />
+            <div>
+              <SendMoneyButton />
+            </div>
+            <div />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
