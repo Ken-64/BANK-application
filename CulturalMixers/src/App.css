@@ -46,10 +46,24 @@
 
 .Account{
   text-align: left;
-  padding-left: 30px;
+  padding-left: 15px;
+  font-size: 20px;
 }
 
 .BalanceText{
   text-align: right;
   padding-right: 30px;
+  font-size: 20px;
+}
+
+.amount{
+  text-align: right;
+  padding-right:60px;
+  font-size: 35px;
+
+  background-color: #f0f0f0; 
+  border: 2px solid #000; 
+  padding: 10px; 
+  border-radius: 15px;
+  margin: 20px; 
 }
