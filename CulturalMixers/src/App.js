@@ -13,12 +13,20 @@ function App() {
             </div>
           </div>
           <div className="profile">
-          <Userimage />
-          <Username/>
-          <Useraccount/>
-          <Userbanlance/>
-          </div>
-        </div>
+            <div className='ImageName'>
+            <Userimage />
+            <Username/>
+            </div>
+            <div className='Account'>
+            < Useraccount/>
+            </div>
+
+            <div className='Balance'>
+            <Userbanlance/>
+           <div/>
+         </div>
+       </div>
+    </div>
   );
 }
 
