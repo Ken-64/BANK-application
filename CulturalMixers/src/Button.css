@@ -1,0 +1,49 @@
+.SendMoneyButtonContent{
+    position: relative;
+}
+
+.SendMoneyButton{
+    appearance: none;
+    border: 0.2;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #393939;
+    padding: 20px 120px;
+    font-size: 25px;
+}
+
+.Walletpic{
+    position: absolute;
+    top: 0;
+    right: 260px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.AllowRightpic{
+    position: absolute;
+    top: 0;
+    right: 180px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.ChevronRightpic{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+    margin: auto;
+}
+
+.ChevronRightpic2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 240px;
+    margin: auto;
+}
