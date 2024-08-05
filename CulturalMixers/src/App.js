@@ -1,32 +1,17 @@
 import './App.css';
-import { Username } from './Components/Username';
-import { Userimage } from './Components/Userimage';
-import { Useraccount } from './Components/Useraccount';
-import { Userbanlance } from './Components/Userbalance';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import { Home } from './Page/Home';
+import { UserListPage } from './Page/UserListPage';
 
 
 function App() {
   return (
-    <div className="App">
-      <div className="smartphone">
-        <div className="content">
-            </div>
-          </div>
-          <div className="profile">
-            <div className='ImageName'>
-            <Userimage />
-            <Username/>
-            </div>
-            <div className='Account'>
-            < Useraccount/>
-            </div>
-
-            <div className='Balance'>
-            <Userbanlance/>
-           <div/>
-         </div>
-       </div>
-    </div>
+   <Router>
+    <Routes>
+      <Route path = '/' element={<Home/>}　/>
+      <Route path='/list' element={<UserListPage/>}/>
+    </Routes>
+   </Router>
   );
 }
 
