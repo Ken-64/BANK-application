@@ -117,3 +117,14 @@
   padding: 10px; 
   margin: 20px; 
 }
+.RequestMessage{
+  padding-right:60px;
+  font-size: 25px;
+  padding: 10px; 
+  margin: 20px; 
+  background-color: #f10f0f; 
+}
+.currency {
+  font-size: 30px; 
+  margin-left:1px;
+}
