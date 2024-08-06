@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ListDummy } from "../Utils/dummyData";
 import ListDetail from "../Components/ListDetail";
-import "../List.css";
+import "../css/List.css";
 
 export const UserListPage = () => {
   const [getUser, setGetUser] = useState([]);
