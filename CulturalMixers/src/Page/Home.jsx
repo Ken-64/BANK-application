@@ -13,10 +13,12 @@ import { getUserInfo } from "../API/api.js";
 export const Home = () => {
   const [userDummy, setUserDummy] = useState([]);
 
+  const userId = 1;
+
   useEffect(() => {
     const GetUser = async () => {
       try {
-        const userInfo = await getUserInfo();
+        const userInfo = await getUserInfo(userId);
         setUserDummy(userInfo);
       } catch (error) {
         console.error("エラー", error);
