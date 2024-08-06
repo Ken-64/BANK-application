@@ -32,7 +32,7 @@ export const sendMoney = async (se_user_id, re_user_id, money) => {
 export const getUserList = async (userId) => {
   try {
     const response = await fetch(`${API_BASE_URL}/user_list/${userId}`, {
-      method: "PUT",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
@@ -65,7 +65,7 @@ export const getUserInfo = async (userId) => {
     }
 
     const data = await response.json();
-    return data.User;
+    return data.data;
   } catch (error) {
     console.error("Error:", error);
     throw error;

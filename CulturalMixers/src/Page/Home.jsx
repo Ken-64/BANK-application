@@ -14,17 +14,27 @@ export const Home = () => {
   const [userDummy, setUserDummy] = useState([]);
 
   const userId = 1;
+  useEffect( () => {
+    // const GetUser = async () => {
+    //   console.log("HELLP")
+    //   try {
+    //     const userInfo = await getUserInfo(userId);
+    //     setUserDummy(userInfo);
+    //   } catch (error) {
+    //     console.error("エラー", error);
+    //   }
+    // };
+    // GetUser();
+      (async function (){
+          try {
+              const userInfo = await getUserInfo(userId)
+              setUserDummy(userInfo);
+          } catch (error) {
+              console.error("エラー", error);
+          }
+      })()
 
-  useEffect(() => {
-    const GetUser = async () => {
-      try {
-        const userInfo = await getUserInfo(userId);
-        setUserDummy(userInfo);
-      } catch (error) {
-        console.error("エラー", error);
-      }
-    };
-    GetUser();
+
   }, []);
 
   return (
@@ -32,18 +42,18 @@ export const Home = () => {
       <div className="smartphone">
         <div className="content"></div>
       </div>
-      {userDummy.map((user) => (
-        <div className="profile" key={user.User.account_number}>
+      {/*{userDummy.map((user) => (*/}
+        <div className="profile" key={userDummy.account_number}>
           <div className="ImageName">
-            <Userimage user={user} />
-            <Username user={user} />
+            <Userimage user={userDummy} />
+            <Username user={userDummy} />
           </div>
           <div className="Account">
-            <Useraccount user={user} />
+            <Useraccount user={userDummy} />
           </div>
 
           <div className="Balance">
-            <Userbanlance user={user} />
+            <Userbanlance user={userDummy} />
             <div>
               <SendMoneyButton />
               <CollectMoneyButton />
@@ -57,7 +67,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      ))}
+      {/*))}*/}
     </div>
   );
 };

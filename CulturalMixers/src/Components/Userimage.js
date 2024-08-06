@@ -1,7 +1,7 @@
 export const Userimage = ({ user }) => {
   return (
     <img
-      src={user.User.icon}
+      src={user.icon}
       alt="Profile"
       className="サンプル1"
       width="200px"
