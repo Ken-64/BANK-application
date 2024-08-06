@@ -10,9 +10,10 @@
     background: #ffffff;
     color: #393939;
     padding: 20px 120px;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 90%;
 }
 
 .Walletpic{
@@ -70,6 +71,7 @@
     padding: 20px 20px;
     font-size: 25px;
     margin-top: 50px;
+    width: 80%;
 }
 
 .MakeLinkButton{
@@ -81,6 +83,7 @@
     color: #ffffff;
     padding: 20px 20px;
     font-size: 25px;
+    width: 80%;
 }
 
 .MadeLinkMessage{
