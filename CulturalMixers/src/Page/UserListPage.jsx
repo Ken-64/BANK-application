@@ -15,7 +15,7 @@ export const UserListPage = () => {
       <h2 className="SelectionUserTitle">送金相手を選択</h2>
       <ul className="listcontainer">
         {getUser.map((user, index) => (
-          <ListDetail key={index} user={user} />
+          <ListDetail key={index} user={user} index={index} />
         ))}
       </ul>
     </>

@@ -9,6 +9,11 @@
   padding-left: 0px;
 }
 
+.custom-link {
+  color: black; /* 色を黒に設定 */
+  text-decoration: none; /* 下線を消す */
+}
+
 .EachList {
   display: flex;
   align-items: center;
