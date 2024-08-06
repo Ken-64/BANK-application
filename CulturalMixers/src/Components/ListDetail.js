@@ -1,14 +1,22 @@
 import React from "react";
 import "../List.css";
+import { Link } from "react-router-dom";
 
-const ListDetail = ({ user }) => {
+const ListDetail = ({ user, index }) => {
   return (
-    <>
-      <li className="EachList">
-        <img className="ListUserIcon" src={user.User.icon} width="100px" />
-        <div className="ListuserName">{user.User.name}</div>
-      </li>
-    </>
+    <li>
+      <Link to={`/send/${index}`} state={{ user }} className="custom-link">
+        <div className="EachList">
+          <img
+            className="ListUserIcon"
+            src={user.User.icon}
+            width="100px"
+            alt={user.User.name}
+          />
+          <div className="ListuserName">{user.User.name}</div>
+        </div>
+      </Link>
+    </li>
   );
 };
 
