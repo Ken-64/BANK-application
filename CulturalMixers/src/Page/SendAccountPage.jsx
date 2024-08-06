@@ -17,8 +17,8 @@ export const SendAccountPage = () => {
     <>
       <div className="titleOfsend">送金先</div>
       <div className="SendImageName">
-        <img src={`/${user.User.icon}`} width="100px" alt={user.User.name} />
-        <div>{user.User.name}</div>
+        <img src={user.icon} width="100px" alt={user.name} />
+        <div>{user.name}</div>
       </div>
       <div className="SendUpSet">
         <SendUserNumber />
