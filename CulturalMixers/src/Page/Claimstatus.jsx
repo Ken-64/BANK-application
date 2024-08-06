@@ -13,6 +13,7 @@ const Claimstatus = () => {
           <div className="payAndIconInner">
             <p className="pay">支払い済み</p>
             <img src="human6.png" alt="アイコン" width="200x" />
+
           </div>
         </div>
       </div>

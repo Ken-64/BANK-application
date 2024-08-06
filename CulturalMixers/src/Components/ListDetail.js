@@ -9,11 +9,11 @@ const ListDetail = ({ user, index }) => {
         <div className="EachList">
           <img
             className="ListUserIcon"
-            src={user.User.icon}
+            src={user.icon}
             width="100px"
-            alt={user.User.name}
+            alt={user.name}
           />
-          <div className="ListuserName">{user.User.name}</div>
+          <div className="ListuserName">{user.name}</div>
         </div>
       </Link>
     </li>

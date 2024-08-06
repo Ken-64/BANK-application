@@ -10,12 +10,7 @@ export const RequestLinkMaker =() =>{
     <div className="RequstNumber">
     <RequestNumber/>
     </div>
-    <div className="Requstmessage">
-    <RequestMessage/>
-    </div>
-    <div>
-    <SendMessageBotton />
-    </div>
+    
     </>
     )
 }

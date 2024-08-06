@@ -18,7 +18,7 @@ export const SendInfo = () => {
 
     // 数値を比較する関数
     const compareNumber = () => {
-        const num = parseFloat(number);
+        const num = Number(number);
         let retrue = 'Disable';
         if (isNaN(num)) {
             return 'Disable';
@@ -26,6 +26,10 @@ export const SendInfo = () => {
         if(!Number.isInteger(num))
         {
             return 'Disable';
+        }
+        if(num == 0)
+        {
+            return 'Disable'
         }
         if(num < comparisonNumber)
         {
