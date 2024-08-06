@@ -1,5 +1,6 @@
 import {ReturnHomeButton} from '../Components/ReturnHomeButton.js';
 import {MakeLinkButton} from '../Components/MakeLinkButton.js';
+import { useLocation } from 'react-router-dom';
 
 export const MadeLinkFin = () => {
 
