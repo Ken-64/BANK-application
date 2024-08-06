@@ -97,3 +97,19 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.MoveMakeLinkButton{
+    text-align: center;
+    appearance: none;
+    border: 0.2;
+    border-radius: 10px;
+    background: #dc3333;
+    color: #ffffff;
+    padding: 20px 20px;
+    font-size: 25px;
+    width: 80%;
+}
+
+.MoveMakeLinkButtonPos{
+    text-align: center;
+}
