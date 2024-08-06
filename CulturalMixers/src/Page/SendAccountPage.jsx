@@ -26,9 +26,6 @@ export const SendAccountPage = () => {
       <div className="SendInfo">
         <SendInfo />
       </div>
-      <div className="SendBotton">
-        <SendBotton />
-      </div>
     </>
   );
 };
