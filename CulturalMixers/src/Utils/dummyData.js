@@ -3,7 +3,7 @@ export const UserDummy = [
   {
     User: {
       account_number: "12345678",
-      money: 10000,
+      balance: 10000,
       name: "フレンド",
       icon: "human1.png",
     },
