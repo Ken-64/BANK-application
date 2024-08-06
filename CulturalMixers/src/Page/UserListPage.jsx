@@ -7,10 +7,12 @@ import { getUserList } from "../API/api";
 export const UserListPage = () => {
   const [getUser, setGetUser] = useState([]);
 
+  const userId = 1;
+
   useEffect(() => {
     const fetchUserList = async () => {
       try {
-        const userInfo = await getUserList();
+        const userInfo = await getUserList(userId);
         setGetUser(userInfo);
       } catch (error) {
         console.error("エラー", error);
