@@ -7,8 +7,9 @@ import { getUserList } from "../API/api";
 export const UserListPage = () => {
   const [getUser, setGetUser] = useState([]);
 
-  useEffect(() => {
-    setGetUser(getUserList);
+  useEffect(async() => {
+    const userList = await getUserList();
+    setGetUser(userList);
   }, []);
 
   return (

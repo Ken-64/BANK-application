@@ -14,8 +14,9 @@ import { getUserInfo } from "../API/api.js";
 export const Home = () => {
   const [userDummy, setUserDummy] = useState([]);
 
-  useEffect(() => {
-    setUserDummy(getUserInfo);
+  useEffect(async () => {
+    const userInfo = await getUserInfo();
+    setUserDummy(userInfo);
   }, []);
 
   return (
