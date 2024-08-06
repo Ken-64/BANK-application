@@ -7,19 +7,20 @@ export const SendInfo = () => {
   //↑引数にユーザーのIDと送信先のIDを入れたい
   const [userData, setUserData] = useState([]);
   const [error, setError] = useState("");
+  const userId = 1; //ユーザーデータの仮置き
   const se_user_id = 1; // 送信者のIDを仮置き
   const re_user_id = 2; // 受信者のIDを仮置き
 
   useEffect(() => {
     (async function () {
       try {
-        const userInfo = await getUserInfo(se_user_id);
+        const userInfo = await getUserInfo(userId);
         setUserData(userInfo);
       } catch (error) {
         console.error("エラー", error);
       }
     })();
-  }, [se_user_id]);
+  }, []);
 
   // 状態を定義
   const navigate = useNavigate();
