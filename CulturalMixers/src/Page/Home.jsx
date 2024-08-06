@@ -6,7 +6,8 @@ import { SendMoneyButton } from "../Components/SendMoneyButton.js";
 import { CollectMoneyButton } from "../Components/CollectMoneyButton.js";
 import { UserDummy } from "../Utils/dummyData.js";
 import { useEffect, useState } from "react";
-
+import { RequestButton } from "../Components/RequestBotton.js";
+import{RequestHistoryButton} from "../Components/RequestHistoryBotton.js";
 export const Home = () => {
   const [userDummy, setUserDummy] = useState([]);
 
@@ -36,6 +37,12 @@ export const Home = () => {
               <CollectMoneyButton />
             </div>
             <div />
+          <div className="Request">
+            <RequestButton/>
+          </div>
+          <div className="RequestHistory">
+            <RequestHistoryButton/>
+          </div>
           </div>
         </div>
       ))}

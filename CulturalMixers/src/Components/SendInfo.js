@@ -1,6 +1,8 @@
 import '..//App.css';
+import React from 'react';
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom"
+
 
 export const SendInfo = () => {
 
@@ -61,6 +63,7 @@ export const SendInfo = () => {
     /*
     return (
         <>
+
         <p className="SendUP">送金金額 </p>
         {/* <p id="textInput" className="SendUPNumber2">円 </p> }
         <input typy="text" name = "name" placeholder='送金金額' class="SendUPNumber2" /> <span class="currency">円</span>
