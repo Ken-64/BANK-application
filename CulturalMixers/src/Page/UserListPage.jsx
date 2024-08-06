@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import { ListDummy } from "../Utils/dummyData";
+// import { ListDummy } from "../Utils/dummyData";
 import ListDetail from "../Components/ListDetail";
 import "../List.css";
+import { getUserList } from "../API/api";
 
 export const UserListPage = () => {
   const [getUser, setGetUser] = useState([]);
 
   useEffect(() => {
-    setGetUser(ListDummy);
+    setGetUser(getUserList);
   }, []);
 
   return (
