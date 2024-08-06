@@ -1,0 +1,61 @@
+.ClaimstatusWrapper{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    padding: 20px;
+    margin: 10px;
+    height: 450px;
+}
+
+.ClaimstatusMouth {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .ClaimstatusBorder {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .ClaimstatusInner {
+    padding-top: 10px;
+  }
+  
+  .ClaimstatusDay {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .ClaimstatusMoney {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .ClaimstatusMessage {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .payAndIconInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .pay {
+    font-size: 25px;
+    /* color: #888; */
+    margin-bottom: 10px;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
