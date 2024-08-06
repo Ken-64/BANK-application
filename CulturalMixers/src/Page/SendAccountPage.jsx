@@ -1,6 +1,5 @@
 import { SendUserNumber } from "../Components/SendUserNumber";
 import { SendInfo } from "../Components/SendInfo";
-import { SendBotton } from "../Components/SendBotton";
 import { useLocation } from "react-router-dom";
 
 export const SendAccountPage = () => {
@@ -8,7 +7,7 @@ export const SendAccountPage = () => {
   const { user } = location.state || {};
 
   if (!user) {
-    return <div>ユーザー情報が見つかりません。</div>;
+    return <div className="notFoundUser">ユーザー情報が見つかりません</div>;
   }
 
   console.log("User Info:", user);
@@ -22,7 +21,7 @@ export const SendAccountPage = () => {
       </div>
       <div className="SendUpSet">
         <SendUserNumber />
-      </div>     
+      </div>
       <div className="titleOfNumber">送金金額</div>
       <div className="SendInfo">
         <SendInfo />

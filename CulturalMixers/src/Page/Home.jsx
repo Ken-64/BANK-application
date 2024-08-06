@@ -11,7 +11,7 @@ import { RequestHistoryButton } from "../Components/RequestHistoryBotton.js";
 import { getUserInfo } from "../API/api.js";
 
 export const Home = () => {
-  const [userDummy, setUserDummy] = useState([]);
+  const [userData, setUserData] = useState([]);
 
   const userId = 1;
   useEffect(() => {
@@ -28,7 +28,7 @@ export const Home = () => {
     (async function () {
       try {
         const userInfo = await getUserInfo(userId);
-        setUserDummy(userInfo);
+        setUserData(userInfo);
       } catch (error) {
         console.error("エラー", error);
       }
@@ -41,17 +41,17 @@ export const Home = () => {
         <div className="content"></div>
       </div>
       {/*{userDummy.map((user) => (*/}
-      <div className="profile" key={userDummy.account_number}>
+      <div className="profile" key={userData.account_number}>
         <div className="ImageName">
-          <Userimage user={userDummy} />
-          <Username user={userDummy} />
+          <Userimage user={userData} />
+          <Username user={userData} />
         </div>
         <div className="Account">
-          <Useraccount user={userDummy} />
+          <Useraccount user={userData} />
         </div>
 
         <div className="Balance">
-          <Userbanlance user={userDummy} />
+          <Userbanlance user={userData} />
           <div>
             <SendMoneyButton />
             <CollectMoneyButton />

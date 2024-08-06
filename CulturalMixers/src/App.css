@@ -37,75 +37,81 @@
   }
 }
 
-.ImageName{
+.ImageName {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: 30px;
 }
 
-.Account{
+.Account {
   text-align: left;
   padding-left: 15px;
   font-size: 20px;
 }
 
-.BalanceText{
+.BalanceText {
   text-align: right;
   padding-right: 30px;
   font-size: 20px;
 }
 
-.amount{
+.amount {
   text-align: right;
-  padding-right:60px;
+  padding-right: 60px;
   font-size: 35px;
 
-  background-color: #f0f0f0; 
-  border: 2px solid #000; 
-  padding: 10px; 
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  padding: 10px;
   border-radius: 15px;
-  margin: 20px; 
-
+  margin: 20px;
 }
 
-.SendImageName{
+.SendImageName {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: 25px;
 }
 
-.titleOfsend{
-  font-size: 25px;
-  margin-top: 100px; 
-  margin-left: 20px; 
+.notFoundUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.SendUp{
+.titleOfsend {
   font-size: 25px;
-  margin-top: 15px; 
-  margin-left: 20px; 
+  margin-top: 100px;
+  margin-left: 20px;
 }
-.titleOfNumber{
+
+.SendUp {
   font-size: 25px;
-  margin-top: 15px; 
-  margin-left: 20px; 
+  margin-top: 15px;
+  margin-left: 20px;
 }
-.SendUPNumber{
+.titleOfNumber {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.SendUPNumber {
   text-align: right;
-  padding-right:60px;
+  padding-right: 60px;
   font-size: 25px;
 }
-.SendUPNumber2{
+.SendUPNumber2 {
   text-align: right;
-  padding-right:60px;
+  padding-right: 60px;
   font-size: 25px;
-  background-color: #f0f0f0; 
-  border: 2px solid #000; 
-  padding: 10px; 
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  padding: 10px;
   border-radius: 15px;
-  margin: 20px; 
+  margin: 20px;
 }
 .InputSend {
   position: absolute;
@@ -117,61 +123,61 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.SendBotton{
-  padding-right:60px;
+.SendBotton {
+  padding-right: 60px;
   font-size: 25px;
-  padding: 10px; 
-  margin: 20px; 
+  padding: 10px;
+  margin: 20px;
 }
-.RequestMessage{
-  padding-right:60px;
+.RequestMessage {
+  padding-right: 60px;
   font-size: 25px;
-  padding: 10px; 
-  margin: 20px; 
-  background-color: #ffffff; 
+  padding: 10px;
+  margin: 20px;
+  background-color: #ffffff;
   height: 90px;
   border-radius: 15px;
 }
 .currency {
-  font-size: 30px; 
-  margin-left:1px;
+  font-size: 30px;
+  margin-left: 1px;
 }
-.titleOfRequest{
-  font-size: 25px; 
+.titleOfRequest {
+  font-size: 25px;
   text-align: center;
   padding-top: 10px;
 }
-.Requestmessage{
-  font-size: 25px; 
+.Requestmessage {
+  font-size: 25px;
   padding-top: 30px;
   padding-left: 20px;
 }
-.RequstNumber{
-  font-size: 25px; 
+.RequstNumber {
+  font-size: 25px;
   padding-top: 30px;
   /* padding-right: 20px; */
 }
-.SendMessageBotton{
-  padding-right:60px;
+.SendMessageBotton {
+  padding-right: 60px;
   font-size: 25px;
-  padding: 10px; 
-  margin: 10px; 
+  padding: 10px;
+  margin: 10px;
   height: 65px;
   border-radius: 15px;
   width: 300px;
   text-align: center;
   /* padding-top:60px; */
-  background-color: #f10e0e; 
+  background-color: #f10e0e;
 }
-.SendUPNumber3{
+.SendUPNumber3 {
   text-align: left;
-  padding-left:20px;
+  padding-left: 20px;
   font-size: 25px;
-  padding-top:20px;
+  padding-top: 20px;
 }
-.Request{
-  padding-top:0px;
+.Request {
+  padding-top: 0px;
 }
-.RequestHistory{
-  padding-top:0px;
+.RequestHistory {
+  padding-top: 0px;
 }

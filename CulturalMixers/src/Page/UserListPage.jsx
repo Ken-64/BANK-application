@@ -2,26 +2,23 @@ import { useEffect, useState } from "react";
 // import { ListDummy } from "../Utils/dummyData";
 import ListDetail from "../Components/ListDetail";
 import "../List.css";
-import {getUserInfo, getUserList} from "../API/api";
+import { getUserList } from "../API/api";
 
 export const UserListPage = () => {
   const [getUser, setGetUser] = useState([]);
 
   const userId = 1;
 
-
-  useEffect( () => {
-    (async function (){
+  useEffect(() => {
+    (async function () {
       try {
-        const userInfo = await getUserList(userId)
-        console.log(userInfo.data)
+        const userInfo = await getUserList(userId);
+        console.log(userInfo.data);
         setGetUser(userInfo.data);
       } catch (error) {
         console.error("エラー", error);
       }
-    })()
-
-
+    })();
   }, []);
 
   return (
