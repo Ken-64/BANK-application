@@ -3,6 +3,7 @@ import { Useraccount } from "../Components/Useraccount.js";
 import { Userbanlance } from "../Components/Userbalance.js";
 import { Userimage } from "../Components/Userimage.js";
 import { SendMoneyButton } from "../Components/SendMoneyButton.js";
+import { CollectMoneyButton } from "../Components/CollectMoneyButton.js";
 import { UserDummy } from "../Utils/dummyData.js";
 import { useEffect, useState } from "react";
 
@@ -32,6 +33,7 @@ export const Home = () => {
             <Userbanlance user={user} />
             <div>
               <SendMoneyButton />
+              <CollectMoneyButton />
             </div>
             <div />
           </div>
