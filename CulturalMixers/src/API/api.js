@@ -17,11 +17,15 @@ export const sendMoney = async (se_user_id, re_user_id, money) => {
     });
 
     if (!response.ok) {
-      throw new Error("エラー発生");
+      throw new Error("サーバーエラー発生");
     }
-
     const data = await response.json();
-    return data.balance;
+    return {
+      // サーバーからの成功/失敗の応答 trueかfalse
+      success: data.success,
+      newBalance: data.newBalance,
+      message: data.message,
+    };
   } catch (error) {
     console.error("Error:", error);
     throw error;
