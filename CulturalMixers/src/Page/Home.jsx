@@ -14,7 +14,7 @@ export const Home = () => {
   const [userDummy, setUserDummy] = useState([]);
 
   const userId = 1;
-  useEffect( () => {
+  useEffect(() => {
     // const GetUser = async () => {
     //   console.log("HELLP")
     //   try {
@@ -25,16 +25,14 @@ export const Home = () => {
     //   }
     // };
     // GetUser();
-      (async function (){
-          try {
-              const userInfo = await getUserInfo(userId)
-              setUserDummy(userInfo);
-          } catch (error) {
-              console.error("エラー", error);
-          }
-      })()
-
-
+    (async function () {
+      try {
+        const userInfo = await getUserInfo(userId);
+        setUserDummy(userInfo);
+      } catch (error) {
+        console.error("エラー", error);
+      }
+    })();
   }, []);
 
   return (
@@ -43,30 +41,30 @@ export const Home = () => {
         <div className="content"></div>
       </div>
       {/*{userDummy.map((user) => (*/}
-        <div className="profile" key={userDummy.account_number}>
-          <div className="ImageName">
-            <Userimage user={userDummy} />
-            <Username user={userDummy} />
-          </div>
-          <div className="Account">
-            <Useraccount user={userDummy} />
-          </div>
+      <div className="profile" key={userDummy.account_number}>
+        <div className="ImageName">
+          <Userimage user={userDummy} />
+          <Username user={userDummy} />
+        </div>
+        <div className="Account">
+          <Useraccount user={userDummy} />
+        </div>
 
-          <div className="Balance">
-            <Userbanlance user={userDummy} />
-            <div>
-              <SendMoneyButton />
-              <CollectMoneyButton />
-            </div>
-            <div />
-            <div className="Request">
-              <RequestButton />
-            </div>
-            <div className="RequestHistory">
-              <RequestHistoryButton />
-            </div>
+        <div className="Balance">
+          <Userbanlance user={userDummy} />
+          <div>
+            <SendMoneyButton />
+            <CollectMoneyButton />
+          </div>
+          <div />
+          <div className="Request">
+            <RequestButton />
+          </div>
+          <div className="RequestHistory">
+            <RequestHistoryButton />
           </div>
         </div>
+      </div>
       {/*))}*/}
     </div>
   );
