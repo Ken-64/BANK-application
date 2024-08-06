@@ -72,12 +72,17 @@ export const SendInfo = () => {
       setError("無効な金額です！");
       return;
     }
-
     try {
-      await sendMoney(se_user_id, re_user_id, Number(money));
-      navigate("/SendMoneyFinish");
+      const result = await sendMoney(se_user_id, re_user_id, Number(money));
+      if (result.success) {
+        console.log(`送金に成功しました: ${result.newBalance}`);
+        navigate("/SendMoneyFinish");
+      } else {
+        setError(result.message || "送金に失敗しました。");
+      }
     } catch (error) {
-      console.error("送金エラーが発生したと思われます", error);
+      console.error("送金エラーが発生しました", error);
+      setError(error.message || "送金処理中にエラーが発生しました。");
     }
   };
 
@@ -90,7 +95,7 @@ export const SendInfo = () => {
           value={money}
           onChange={handleChange}
           placeholder="送金金額"
-          class="SendUPNumber2"
+          className="SendUPNumber2"
         />
       </div>
       <div className="SendBotton">
