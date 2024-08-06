@@ -5,6 +5,7 @@ import { Home } from "./Page/Home";
 import { UserListPage } from "./Page/UserListPage";
 import { SendAccountPage } from "./Page/SendAccountPage";
 import { SendMoneyFin } from "./Page/SendMoneyFin";
+import { RequestLinkMaker } from "./Page/RequestLinkMaker";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/list" element={<UserListPage />} />
         <Route path="/send/:id" element={<SendAccountPage />} />
         <Route path="/SendMoneyFinish" element={<SendMoneyFin />} />
+        <Route path="/RequestLinkMaker" element={<RequestLinkMaker />} />
       </Routes>
     </Router>
   );
