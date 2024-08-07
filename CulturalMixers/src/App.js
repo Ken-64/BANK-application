@@ -7,6 +7,7 @@ import { SendAccountPage } from "./Page/SendAccountPage";
 import { SendMoneyFin } from "./Page/SendMoneyFin";
 import { MadeLinkFin } from "./Page/MadeLinkPage";
 import { RequestLinkMaker } from "./Page/RequestLinkMaker";
+import Claimstatus from "./Page/Claimstatus";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/SendMoneyFinish" element={<SendMoneyFin />} />
         <Route path="/MadeLinkFinish" element={<MadeLinkFin />} />
         <Route path="/RequestLinkMaker" element={<RequestLinkMaker />} />
+        <Route path="/Claimstatus" element={<Claimstatus />} />
       </Routes>
     </Router>
   );

@@ -114,3 +114,41 @@
 .MoveMakeLinkButtonPos{
     text-align: center;
 }
+
+.BackToHomeButtonContent{
+    position: relative;
+    width: 70px; /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
+    bottom: 10%;
+    transform: translateY(50%);
+
+}
+.Homepic{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+.BackToHomeButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.BackToHome{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ErrorBackToHomeButton{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}

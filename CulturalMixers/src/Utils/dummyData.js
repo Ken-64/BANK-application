@@ -1,4 +1,4 @@
-// Dummy user
+// Dummy user *配列はだめ
 export const UserDummy = [
   {
     User: {
@@ -10,7 +10,7 @@ export const UserDummy = [
   },
 ];
 
-// Dummy list
+// Dummy list　*配列はだめ
 export const ListDummy = [
   {
     User: {

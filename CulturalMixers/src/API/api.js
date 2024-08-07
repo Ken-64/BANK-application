@@ -17,11 +17,13 @@ export const sendMoney = async (se_user_id, re_user_id, money) => {
     });
 
     if (!response.ok) {
-      throw new Error("エラー発生");
+      throw new Error("サーバーエラー発生");
     }
-
     const data = await response.json();
-    return data.balance;
+    return {
+      // サーバーからの成功/失敗の応答 trueかfalse
+      success: data.flag,
+    };
   } catch (error) {
     console.error("Error:", error);
     throw error;
@@ -32,7 +34,7 @@ export const sendMoney = async (se_user_id, re_user_id, money) => {
 export const getUserList = async (userId) => {
   try {
     const response = await fetch(`${API_BASE_URL}/user_list/${userId}`, {
-      method: "PUT",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
@@ -65,7 +67,7 @@ export const getUserInfo = async (userId) => {
     }
 
     const data = await response.json();
-    return data.User;
+    return data.data;
   } catch (error) {
     console.error("Error:", error);
     throw error;
