@@ -135,15 +135,19 @@
   padding: 10px;
   margin: 20px;
   background-color: #ffffff;
-  height: 90px;
+  height: 100px;
   border-radius: 15px;
+  width: 350px;
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  justify-content: center;  /* 水平居中 */
 }
 .currency {
   font-size: 30px;
   margin-left: 1px;
 }
 .titleOfRequest {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   padding-top: 10px;
 }
@@ -154,7 +158,8 @@
 }
 .RequstNumber {
   font-size: 25px;
-  padding-top: 30px;
+  padding-top: 2px;
+  
   /* padding-right: 20px; */
 }
 .SendMessageBotton {
