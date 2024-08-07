@@ -30,7 +30,7 @@ export const UserListPage = () => {
           <ListDetail key={user.user_id} user={user} />
         ))}
       </ul>
-      <div className="BackToHome">
+      <div className="BackToHomeSend">
       <BackToHomeButton/>
       </div>
     </>
