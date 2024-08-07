@@ -24,7 +24,7 @@ export const SendAccountPage = () => {
       </div>
       <div className="titleOfNumber">送金金額</div>
       <div className="SendInfo">
-        <SendInfo />
+        <SendInfo user={user} />
       </div>
     </>
   );

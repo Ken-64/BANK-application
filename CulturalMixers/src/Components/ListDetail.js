@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 const ListDetail = ({ user, index }) => {
   return (
     <li>
-      <Link to={`/send/${index}`} state={{ user }} className="custom-link">
+      <Link
+        to={`/send/${user.user_id}`}
+        state={{ user }}
+        className="custom-link"
+      >
         <div className="EachList">
           <img
             className="ListUserIcon"
