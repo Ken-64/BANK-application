@@ -1,26 +1,26 @@
 import "..//App.css";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { getUserInfo, sendMoney } from "../API/api";
+import { sendMoney } from "../API/api";
 
-export const SendInfo = () => {
+export const SendInfo = ({ user }) => {
   //↑引数にユーザーのIDと送信先のIDを入れたい
-  const [userData, setUserData] = useState([]);
+  //   const [userData, setUserData] = useState([]);
   const [error, setError] = useState("");
-  const userId = 1; //ユーザーデータの仮置き
+  //   const userId = 1;  ユーザーデータの仮置き
   const se_user_id = 1; // 送信者のIDを仮置き
-  const re_user_id = 2; // 受信者のIDを仮置き
+  const re_user_id = user.user_id; // 受信者のIDを仮置き
 
-  useEffect(() => {
-    (async function () {
-      try {
-        const userInfo = await getUserInfo(userId);
-        setUserData(userInfo);
-      } catch (error) {
-        console.error("エラー", error);
-      }
-    })();
-  }, []);
+  //   useEffect(() => {
+  //     (async function () {
+  //       try {
+  //         const userInfo = await getUserInfo(userId);
+  //         setUserData(userInfo);
+  //       } catch (error) {
+  //         console.error("エラー", error);
+  //       }
+  //     })();
+  //   }, []);
 
   // 状態を定義
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ export const SendInfo = () => {
   //   const [isDisabled, setIsDisabled] = useState(true);　usememoを使うため必要なし
 
   // 比較する基準の数値
-  const getCurrentMoney = userData.balance;
+  const getCurrentMoney = user.balance;
   const exMath = Number(getCurrentMoney);
   const comparisonNumber = exMath;
 
