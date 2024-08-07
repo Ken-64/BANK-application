@@ -7,5 +7,6 @@ export const SendMoneyFin = () => {
       <h2>送金処理が完了しました</h2>
       <ReturnHomeButton />
     </div>
+    
   );
 };

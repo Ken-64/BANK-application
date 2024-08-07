@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { RequestButton } from "../Components/RequestBotton.js";
 import { RequestHistoryButton } from "../Components/RequestHistoryBotton.js";
 import { getUserInfo } from "../API/api.js";
+;
 
 export const Home = () => {
   const [userData, setUserData] = useState([]);
