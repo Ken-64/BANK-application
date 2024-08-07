@@ -28,7 +28,7 @@ export const SendInfo = ({ user }) => {
   //   const [isDisabled, setIsDisabled] = useState(true);　usememoを使うため必要なし
 
   // 比較する基準の数値
-  const getCurrentMoney = userData.data.balance;
+  const getCurrentMoney = userData.balance;
   const exMath = Number(getCurrentMoney);
   const comparisonNumber = exMath;
 
