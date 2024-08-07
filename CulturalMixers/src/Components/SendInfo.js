@@ -29,6 +29,7 @@ export const SendInfo = ({ user }) => {
 
   // 比較する基準の数値
   const getCurrentMoney = userData.balance;
+  console.log(getCurrentMoney);
   const exMath = Number(getCurrentMoney);
   const comparisonNumber = exMath;
 
