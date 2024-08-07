@@ -2,7 +2,7 @@ import React from "react";
 import "../List.css";
 import { Link } from "react-router-dom";
 
-const ListDetail = ({ user, index }) => {
+const ListDetail = ({ user }) => {
   return (
     <li>
       <Link
