@@ -22,9 +22,7 @@ export const sendMoney = async (se_user_id, re_user_id, money) => {
     const data = await response.json();
     return {
       // サーバーからの成功/失敗の応答 trueかfalse
-      success: data.success,
-      newBalance: data.newBalance,
-      message: data.message,
+      success: data.flag,
     };
   } catch (error) {
     console.error("Error:", error);
