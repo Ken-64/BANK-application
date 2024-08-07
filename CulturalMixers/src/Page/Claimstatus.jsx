@@ -1,6 +1,6 @@
 import React from "react";
 import "../page.css";
-
+import { BackToHomeButton } from "../Components/BackToHomeButton.js"
 const Claimstatus = () => {
   return (
     <div className="ClaimstatusWrapper">
@@ -13,6 +13,9 @@ const Claimstatus = () => {
           <div className="payAndIconInner">
             <p className="pay">支払い済み</p>
             <img src="human6.png" alt="アイコン" width="200x" />
+          </div>
+          <div className="BackToHome">
+            <BackToHomeButton/>
           </div>
         </div>
       </div>

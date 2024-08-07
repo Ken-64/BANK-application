@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ListDetail from "../Components/ListDetail";
 import "../List.css";
 import { getUserList } from "../API/api";
+import { BackToHomeButton } from "../Components/BackToHomeButton";
 
 export const UserListPage = () => {
   const [getUser, setGetUser] = useState([]);
@@ -29,6 +30,9 @@ export const UserListPage = () => {
           <ListDetail key={index} user={user} index={index} />
         ))}
       </ul>
+      <div className="BackToHome">
+      <BackToHomeButton/>
+      </div>
     </>
   );
 };
